@@ -189,9 +189,10 @@ $button-responsive-sizes: ("mobile": ("small": ($size-small * 0.75), "normal": (
         &.is-hovered,
         &:focus,
         &.is-focused
-          background-color: $color
-          border-color: $color
-          color: $color-invert
+          @media screen and (hover: hover) and (pointer: fine)
+            background-color: $color
+            border-color: $color
+            color: $color-invert
         &.is-loading
           &::after
             border-color: transparent transparent $color $color !important
